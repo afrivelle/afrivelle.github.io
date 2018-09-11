@@ -1,0 +1,118 @@
+@import "scss/mixins/material-palette";
+@import "scss/mixins/skinning";
+@import "scss/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "scss/theming";
+@import "scss/custom-bootstrap";
+@import "scss/core";
+.card {
+    min-height: 160px;
+}
+
+.spinnerr {
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    background: transparent
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    box-shadow: none;
+    border: 0;
+    color: #fff;
+    border-radius: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+}
+
+.btn:hover {
+    outline: none;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.modal-header {
+    background: lightblue;
+    padding: 20px
+}
+
+.modal-footer {
+    background: lightgray
+}
+
+.btn-secondary {
+    background: gray
+}
+
+.btn-secondary:hover {
+    background: darkgrey
+}
+
+.btn-primary {
+    margin: auto;
+}
+
+.headers {
+    background: lightgrey;
+    border-bottom: 1px solid #999;
+    padding: 10px;
+    color: #000;
+    margin: 20px
+}
+
+.select {
+    max-width: 97.8%;
+    margin: auto
+}
+
+.thead-inverse th {
+    background: lightgray;
+    color: black
+}
+
+.thead-inverse {
+    border-radius: 3px
+}
+
+th>.teal {
+    margin-top: 30px solid blue;
+    padding-top: 30px solid blue;
+    border-top: 30px solid blue;
+    background-color: #2ABDCE;
+}
+
+.notactive::after {
+    content: ' \274C';
+}
+
+.active::after {
+    content: ' \2705';
+}
+
+.btn-primary:disabled,
+.btn-info:disabled {
+    background-color: #30b170;
+    border-color: #30b170;
+}
+
+.btn-primary,
+.btn-info,
+.btn-submit,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-submit:hover {
+    background-color: #016937;
+    border-color: #016937;
+}
+
+.form-control {
+    border-radius: 3rem;
+}
